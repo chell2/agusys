@@ -1,0 +1,346 @@
+/* 全体 */
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	color: #666;
+	font-size: 1.5em;
+	min-width: 600px;
+	background-color: rgba(34, 102, 30);
+}
+
+/* 送信フォーム */
+fieldset {
+	width: 87%;
+	margin: 2.5em auto;
+	padding: 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+fieldset.indiv {
+	width: 96%;
+	height: 25.85em;
+	margin: 2.5em auto;
+	padding: 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+/* あぐしすロゴ */
+div.logo {
+	width: 100%;
+	height: 10em;
+	margin: 2em auto 3.4rem;
+	padding: 0 auto;
+	text-align: center;
+}
+
+/* 入力欄 */
+img.icon {
+	width: 30px;
+	height: auto;
+}
+
+input {
+	border: none;
+	outline: none;
+	font-size: 98%;
+	display: inline;
+	vertical-align: top;
+	margin-top: .2rem;
+	margin-left: .5rem;
+}
+
+div.inputbox {
+	width: 21rem;
+	height: 2rem;
+	margin: 1rem auto 0;
+	padding: .3rem 1rem;
+	border-bottom: dotted rgba(34, 102, 30, 0.8);
+	border-width: .4rem;
+}
+
+div.inputbox:hover {
+	border-bottom: solid rgba(34, 102, 30, 0.7);
+	border-width: .4rem;
+}
+
+/* ボタン位置調整 */
+div.loginbtnwrap {
+	max-width: 300px;
+	margin: 3rem auto 1rem;
+}
+
+div.returnbtnwrap {
+	max-width: 300px;
+	margin: 6.6rem auto 4.2rem;
+}
+
+/* ログインボタン */
+.loginbtn {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background: #22661e;
+	border: 3px solid #22661e;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding: 0 45px 0 25px;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	line-height: 1.3;
+	text-align: left;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.loginbtn:before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border: 0;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	margin-top: -6px;
+}
+
+.loginbtn:hover {
+	background: #fff;
+	color: #22661e;
+}
+
+.loginbtn:hover:before {
+	border-top: 2px solid #22661e;
+	border-right: 2px solid #22661e;
+}
+
+/* 戻るボタン */
+.returnbtn {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50px;
+	position: relative;
+	background: #22661e;
+	border: 3px solid #22661e;
+	border-radius: 30px;
+	box-sizing: border-box;
+	padding: 0 25px 0 45px;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	line-height: 1.3;
+	text-align: left;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.returnbtn:before {
+	content: '';
+	width: 8px;
+	height: 8px;
+	border: 0;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	margin-top: -6px;
+}
+
+.returnbtn:hover {
+	background: #fff;
+	color: #22661e;
+}
+
+.returnbtn:hover:before {
+	border-top: 2px solid #22661e;
+	border-left: 2px solid #22661e;
+}
+
+/* リンク */
+a.linkstyle {
+	font-size: 20px;
+	color: #22661e;
+	text-decoration: none;
+	background: linear-gradient(rgba(34, 102, 30, 0.7) 0 0) 0 100% /var(--d, 0) 4px no-repeat;
+	transition: 0.5s;
+}
+
+a.linkstyle:hover {
+	--d: 100%;
+}
+
+div.linkwrap {
+	margin-left: 14px;
+	margin-bottom: 16px;
+}
+
+a.iconlink:link:visited:active{
+	color: #22661e;
+}
+
+a.iconlink:hover{
+	color: #22661e8e;
+}
+
+
+/* テキスト */
+p.errormsg {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	margin-top: 4.5rem;
+}
+
+p.adminpagetitle {
+	background-color: #22661e;
+	color: #fff;
+	text-align: center;
+}
+
+/* 管理者画面 */
+div.adminreadmain {
+	width: 87%;
+	height: 25.85em;
+	margin: 2.5em auto;
+	padding: .1em 0 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+/* 職員一覧 */
+div.stafflistwrap {
+	margin: 1em auto 2em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 16em;
+	width: 85vw;
+}
+/* vw ビューポートの幅に対する割合, vh 高さに対する割合
+   vmin 幅と高さのうち値が小さい方に対する割合 */
+
+div.stafflistinnerwrap {
+	width: 87%;
+	margin: 0 auto;
+	padding: 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+table.stafflist {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: .9em;
+}
+
+table.stafflist thead th {
+	/* 縦スクロール時に固定する */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/* tbody内のセルより手前に表示する */
+	z-index: 1;
+}
+
+table.stafflist th,
+table.stafflist td {
+	padding: 5px 0;
+	text-align: center;
+}
+
+table.stafflist th {
+	background-color: #eee;
+}
+
+table.stafflist tr:nth-child(even) {
+	background-color: #eee;
+}
+
+/* 職員画面（申請情報） */
+div.applreadmain {
+	width: 96%;
+	height: 25.85em;
+	margin: 2.5em auto;
+	padding: .1em 0 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+/* 申請一覧 */
+div.appllistwrap {
+	margin: 1em auto 2em;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 19em;
+	width: 90vw;
+}
+
+/* vw ビューポートの幅に対する割合, vh 高さに対する割合
+vmin 幅と高さのうち値が小さい方に対する割合 */
+
+div.appllistinnerwrap {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	border-color: #22661e;
+	border-width: 0px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+table.appllist {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: .6em;
+}
+
+table.appllist thead th {
+	/* 縦スクロール時に固定する */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/* tbody内のセルより手前に表示する */
+	z-index: 1;
+}
+
+table.appllist th,
+table.appllist td {
+	padding: 5px 0;
+	text-align: center;
+}
+
+table.appllist th {
+	background-color: #eee;
+}
+
+table.appllist tr:nth-child(even) {
+	background-color: #eee;
+}
